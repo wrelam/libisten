@@ -1,7 +1,6 @@
 # Builds the isten library
 AR:= ar
 CC:= gcc
-LD:= ld
 AFLAGS:= rcs
 CFLAGS:= -I./include -O3
 LDFLAGS:= -L./export
@@ -9,7 +8,7 @@ LIBNAME:= libisten
 VPATH:= include:src:test
 BUILDDIR:= build
 OUTDIR:= export
-MKDIR:= -mkdir
+MKDIR:= mkdir
 TESTNAME:= libisten_test
 
 .PHONY: all
@@ -32,10 +31,10 @@ $(TESTNAME).o: $(TESTNAME).c
 directories: $(BUILDDIR) $(OUTDIR)
 
 $(BUILDDIR):
-	@$(MKDIR) -p $(BUILDDIR)
+	@-$(MKDIR) -p $(BUILDDIR)
 
 $(OUTDIR):
-	@$(MKDIR) -p $(OUTDIR)
+	@-$(MKDIR) -p $(OUTDIR)
 
 clean:
 	rm -rf $(BUILDDIR)
