@@ -20,7 +20,7 @@ ar rcs export/libisten.a build/libisten.o
 You can build and run the included tests like so:
 
 ```
-make test
+$ make test
 ```
 
 ### Expected output
@@ -41,5 +41,5 @@ All tests passed!
 You can cleanup any built files like so:
 
 ```
-make clean
+$ make clean
 ```
