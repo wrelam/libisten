@@ -32,10 +32,10 @@ $(TESTNAME).o: $(TESTNAME).c
 directories: $(BUILDDIR) $(OUTDIR)
 
 $(BUILDDIR):
-	$(MKDIR) -p $(BUILDDIR)
+	@$(MKDIR) -p $(BUILDDIR)
 
 $(OUTDIR):
-	$(MKDIR) -p $(OUTDIR)
+	@$(MKDIR) -p $(OUTDIR)
 
 clean:
 	rm -rf $(BUILDDIR)
