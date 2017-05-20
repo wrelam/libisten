@@ -3,7 +3,11 @@
 *//**
     Public interface to the isten library
 *******************************************************************************/
-#include <stdio.h>
+#ifndef LIBISTEN_H
+#define LIBISTEN_H
 
 int
 isten(long double num);
+
+#endif /* LIBISTEN_H */
+

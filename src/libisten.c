@@ -3,6 +3,10 @@
 *//**
     Implementation of the isten library.
 *******************************************************************************/
+#ifdef DEBUG
+#include <stdio.h>
+#endif /* DEBUG */
+
 #include "libisten.h"
 
 /*******************************************************************************
@@ -35,3 +39,4 @@ isten(long double num)
 
     return ret;
 }
+

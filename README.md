@@ -1,5 +1,5 @@
 # libisten
-A C library which determines if a number is equal to 10 or not.
+A C library which determines if a number is equal to ten or not.
 
 ## Compiling
 From the root directory, run make:
@@ -43,3 +43,4 @@ You can cleanup any built files like so:
 ```
 $ make clean
 ```
+
